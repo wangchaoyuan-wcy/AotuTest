@@ -10,11 +10,8 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 
 public class MyHttpClient {
-
-
     @Test
     public void test1() throws IOException {
-
         //用来存放我们的结果
         String result;
         HttpGet get = new HttpGet("http://www.baidu.com");
