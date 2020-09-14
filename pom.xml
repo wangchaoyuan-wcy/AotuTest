@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.5.3.RELEASE</version>
+        <version> 1.5.3.RELEASE</version>
     </parent>
     <groupId>com.bling</groupId>
     <artifactId>interface</artifactId>
@@ -26,11 +26,15 @@
     </build>
     <modules>
 
-        <module>Chapter5</module>
-        <module>Chapter6</module>
-        <module>Chapter9</module>
-        <module>Chapter10</module>
-        <module>Chapter11</module>
+        <module>interface5</module>
+
+        <module>interface9</module>
+        <module>interface10</module>
+        <module>interface11</module>
+        <module>interface12</module>
+        <module>interface13</module>
+        <!--<module>interface10</module>
+        <module>interface11</module>-->
 
     </modules>
 

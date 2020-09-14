@@ -6,16 +6,25 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="interface9" />
-        <module name="Chapter9" />
         <module name="interface5" />
+        <module name="interface13" />
+        <module name="interface12" />
+        <module name="interface11" />
+        <module name="interface10" />
+        <module name="Chapter9" />
+        <module name="interface9" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="AotuTest" target="1.8" />
       <module name="Chapter6" target="1.5" />
       <module name="Chapter9" target="1.5" />
+      <module name="interface10" target="1.8" />
+      <module name="interface11" target="1.8" />
+      <module name="interface12" target="1.8" />
+      <module name="interface13" target="1.8" />
       <module name="interface5" target="1.5" />
-      <module name="interface9" target="1.5" />
+      <module name="interface9" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

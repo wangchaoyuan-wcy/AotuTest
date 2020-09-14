@@ -1,0 +1,21 @@
+server:
+   port: 8888
+
+logging:
+    path: logs
+    file: mylog.log
+
+
+spring:
+   application:
+          name: report
+   datasource:
+       driver-class-name: com.mysql.jdbc.Driver
+       url: jdbc:mysql://172.17.72.11:22809/crm_test_db
+       username: crm_test_user
+       password: EyH5O!8Wq!uJKAs3lP
+
+mybatis:
+    type-aliases-package: com.course.model
+    mapper-locations:
+       - mapper/*

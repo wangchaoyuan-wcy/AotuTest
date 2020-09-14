@@ -3,7 +3,9 @@ package com.course.httpclient.demo;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
 import org.testng.annotations.Test;
 
@@ -18,6 +20,17 @@ public class MyHttpClient {
         //这个是用来执行get方法的
         HttpClient client = new DefaultHttpClient();
         HttpResponse response = client.execute(get);
+        result = EntityUtils.toString(response.getEntity(),"utf-8");
+        System.out.println(result);
+    }
+    @Test
+    public void test2() throws IOException {
+        //用来存放我们的结果
+        String result;
+        HttpGet get = new HttpGet("http://www.baidu.com");
+        //这个是用来执行get方法的
+        CloseableHttpClient httpClient = HttpClientBuilder.create().build();
+        HttpResponse response = httpClient.execute(get);
         result = EntityUtils.toString(response.getEntity(),"utf-8");
         System.out.println(result);
     }
