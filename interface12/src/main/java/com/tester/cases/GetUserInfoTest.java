@@ -2,10 +2,9 @@ package com.tester.cases;
 
 import com.tester.config.TestConfig;
 import com.tester.model.GetUserInfoCase;
-import com.tester.model.GetUserListCase;
-import com.tester.model.InterfaceName;
+
 import com.tester.model.User;
-import com.tester.utils.ConfigFile;
+
 import com.tester.utils.DatabaseUtil;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpPost;
@@ -15,13 +14,13 @@ import org.apache.ibatis.session.SqlSession;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.testng.Assert;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+@SuppressWarnings("all")
 public class GetUserInfoTest {
     @Test(groups = "loginTrue",description = "获取userId为1的用户信息")
     public void getUserInfo() throws IOException, InterruptedException {
@@ -66,7 +65,9 @@ public class GetUserInfoTest {
         //获取响应结果
         result = EntityUtils.toString(response.getEntity(),"utf-8");
         System.out.println("调用接口result:"+result);
+        //把result变为list集合
         List resultList = Arrays.asList(result);
+        //把resultList变为JSONArray（list）集合
         JSONArray array = new JSONArray(resultList);
         System.out.println(array.toString());
         return array;

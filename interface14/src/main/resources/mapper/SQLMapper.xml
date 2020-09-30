@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 命名空间mapper,如果有多个mapper文件，这个必须唯一 -->
+<mapper namespace="com.tester.model">
+    <!--更改课时发布状态-->
+    <update id="updateLessonState" parameterType="com.tester.model.Lesson" >
+        <!-- SQL语句 -->
+        update crm_lesson set state=#{state} where name=#{name}
+    </update>
+    <!--查询课程id-->
+    <select id="setcoureId"  resultType="int">
+        <!--SQL语句-->
+        select id from crm_course ORDER BY id desc LIMIT 1
+    </select>
+    <!--查询班级id-->
+    <select id="setClassId"  resultType="int">
+        <!--SQL语句-->
+        select id from crm_class_info ORDER BY id desc LIMIT 1
+    </select>
+    <!--更改发布平台-->
+    <update id="updateClassState" parameterType="int" >
+        <!-- SQL语句 -->
+        update crm_class_info set distribution=70,distribution_name="新东方AI" where id=#{id}
+    </update>
+    <!--查询课时id-->
+    <select id="setLessonId"  resultType="int">
+        <!--SQL语句-->
+        select id from crm_lesson ORDER BY id desc LIMIT 1
+    </select>
+    <!--根据名字查询课时id-->
+    <!--<select id="setLessonId"  parameterType="" resultType="int">
+        &lt;!&ndash;SQL语句&ndash;&gt;
+        select id from crm_lesson where name =#{name}
+    </select>-->
+
+
+
+
+</mapper>

@@ -12,6 +12,7 @@
         <module name="interface11" />
         <module name="interface10" />
         <module name="Chapter9" />
+        <module name="interface14" />
         <module name="interface9" />
       </profile>
     </annotationProcessing>
@@ -23,6 +24,7 @@
       <module name="interface11" target="1.8" />
       <module name="interface12" target="1.8" />
       <module name="interface13" target="1.8" />
+      <module name="interface14" target="1.8" />
       <module name="interface5" target="1.5" />
       <module name="interface9" target="1.8" />
     </bytecodeTargetLevel>
