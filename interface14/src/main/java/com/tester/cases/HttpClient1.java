@@ -20,7 +20,7 @@ public class HttpClient1 {
         HttpPost httpPost=new HttpPost(testConfig);
         //设置请求头信息 设置header
         httpPost.setHeader("content-type","application/json");
-        httpPost.setHeader("token","eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJjb20ueGRmLmJsaW5nIiwiYXVkIjoiY2xpZW50IiwidXNlcmNvZGUiOiJjcm1hZG1pbiIsImV4cCI6MTYwMTg2ODc2NywiaWF0IjoxNjAxMjYzOTY3fQ.bB9EETrFduxzvrOqjGIJtvN2N_lTPC_twG_au26ELj3_UWcfl4rYxuO3tW52kNJgDYYZIu7DZXpoFsQUMXn_5g");
+        httpPost.setHeader("token","eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJjb20ueGRmLmJsaW5nIiwiYXVkIjoiY2xpZW50IiwidXNlcmNvZGUiOiJjaGFuZ3BpbiIsImV4cCI6MTYwMzEwNjg1MywiaWF0IjoxNjAyNTAyMDUzfQ.ebW1lQoNRJOdQLo_dd7bZFbuIsE4w9yIIl6rTwlOy0TzhmORvHE2c9Xs9ypm9rZEuGuVNu_rxGAmQjcR1W0zCA");
         //将参数转化为HttpEntity类型的实现类才能把参数放到方法里
         StringEntity entity = new StringEntity(jsonObject1.toString(),"utf-8");
         //将参数信息添加到方法中
@@ -43,7 +43,7 @@ public class HttpClient1 {
         HttpPost httpPost=new HttpPost(testConfig);
         //设置请求头信息 设置header
         httpPost.setHeader("content-type","application/json");
-        httpPost.setHeader("token","eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJjb20ueGRmLmJsaW5nIiwiYXVkIjoiY2xpZW50IiwidXNlcmNvZGUiOiJjcm1hZG1pbiIsImV4cCI6MTYwMTQ2ODY4NSwiaWF0IjoxNjAwODYzODg1fQ.SkrB1KR2eHzIHUIvUgZNbMuBR5j-CA-eZJF7MMrCeU0RWW8vPtNfzFHadohA2EBqjTooiGnBLjWHwrw9rUninA");
+        httpPost.setHeader("token","eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJjb20ueGRmLmJsaW5nIiwiYXVkIjoiY2xpZW50IiwidXNlcmNvZGUiOiJjaGFuZ3BpbiIsImV4cCI6MTYwMzEwNjg1MywiaWF0IjoxNjAyNTAyMDUzfQ.ebW1lQoNRJOdQLo_dd7bZFbuIsE4w9yIIl6rTwlOy0TzhmORvHE2c9Xs9ypm9rZEuGuVNu_rxGAmQjcR1W0zCA");
         //将参数转化为HttpEntity类型的实现类才能把参数放到方法里
         StringEntity entity = new StringEntity("utf-8");
         //将参数信息添加到方法中

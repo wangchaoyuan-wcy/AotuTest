@@ -11,6 +11,8 @@ public class Template {
     private int courseChannelCode=10;
     //同步集团教务(0:不同步 1:同步)
     private int syncStatus=0;
+    //类别标签
+    private int classLabel;
     //分期
     private int stage=10;
     //非周期性开班数
@@ -29,6 +31,8 @@ public class Template {
     private int commentStatus=1;
     //免费课时
     private int freeLesson=0;
+    //教材价格
+    private int materialPrice=0;
 
 
 }

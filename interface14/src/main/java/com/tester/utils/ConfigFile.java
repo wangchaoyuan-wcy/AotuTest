@@ -1,7 +1,5 @@
 package com.tester.utils;
 
-import com.tester.model.InterfaceName;
-
 import java.util.Locale;
 import java.util.ResourceBundle;
 

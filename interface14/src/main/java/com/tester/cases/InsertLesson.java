@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import static com.tester.model.InterfaceName.*;
+import static com.tester.utils.InterfaceName.*;
 import static java.lang.Thread.sleep;
 @SuppressWarnings("all")
 

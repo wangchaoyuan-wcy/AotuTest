@@ -20,11 +20,14 @@ public class Lesson {
     private int term=40;
     //等级
     private int level=20;
-    //课程类型
+
+
+
+    //课程类型（试听）
     private int courseType=20;
     //备注
     private String remark="代码测试";
-    //1直播；2AI课堂；3录播视频
+    //1直播；2AI课堂；3录播视频（课时类型）
     private int lessonWay=2;
     //'教材类型(10主课 30前途美中 40文化课 50PW教材 60自然拼读)'
     private int materialType=10;
@@ -38,7 +41,6 @@ public class Lesson {
     private int lessonType=2;
     //发布状态
     private int state=20;
-
-
+    //resources": []"  课时资源集合（所有课时资源属性信息必传
 
 }

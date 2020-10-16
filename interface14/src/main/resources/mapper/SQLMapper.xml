@@ -29,10 +29,9 @@
         select id from crm_lesson ORDER BY id desc LIMIT 1
     </select>
     <!--根据名字查询课时id-->
-    <!--<select id="setLessonId"  parameterType="" resultType="int">
-        &lt;!&ndash;SQL语句&ndash;&gt;
-        select id from crm_lesson where name =#{name}
-    </select>-->
+    <select id="setLessonName"  parameterType="int" resultType="String">
+        select name from crm_lesson where id =#{id}
+    </select>
 
 
 
