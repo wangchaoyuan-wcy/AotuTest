@@ -12,5 +12,8 @@
     <bean id="httpClient1" class="com.tester.cases.HttpClient1"/>
     <bean id="course" class="com.tester.model.Course"/>
     <bean id="template" class="com.tester.model.Template"/>
-
+    <bean id="controller" class="com.api.utils.Controller"/>
+    <bean id="httpClient" class="com.api.config.HttpClient"/>
+    <!--<bean id="login" class="com.api.utils.Login"/>
+-->
 </beans>

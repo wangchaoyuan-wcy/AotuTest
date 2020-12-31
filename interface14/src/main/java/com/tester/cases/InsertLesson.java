@@ -1,4 +1,5 @@
 package com.tester.cases;
+import com.alibaba.fastjson.JSON;
 import com.tester.config.TestConfig;
 import com.tester.model.*;
 import com.tester.utils.ConfigFile;
@@ -30,7 +31,7 @@ public class InsertLesson {
             HttpClient httpClient=new DefaultHttpClient();
             HttpPost httpPost=new HttpPost(TestConfig.getInsert= ConfigFile.getUrl(GETINSERT));
             JSONObject jsonObject=new JSONObject();
-            //jsonObject = JSON.parseObject("{\"name\":\"测试4\",\"lessonNum\":1,\"isTestCourse\":0,\"whenLong\":30,\"vocabulary\":\"\",\"term\":40,\"level\":20,\"courseType\":20,\"remark\":\"测试1\",\"lessonWay\":2,\"materialType\":\"10\",\"subjectName\":\"英语\",\"subjectCode\":10,\"coveUrl\":\"\",\"aiId\":243,\"lessonType\":2}");
+            jsonObject = JSON.parseObject("{\"name\":\"测试4\",\"lessonNum\":1,\"isTestCourse\":0,\"whenLong\":30,\"vocabulary\":\"\",\"term\":40,\"level\":20,\"courseType\":20,\"remark\":\"测试1\",\"lessonWay\":2,\"materialType\":\"10\",\"subjectName\":\"英语\",\"subjectCode\":10,\"coveUrl\":\"\",\"aiId\":243,\"lessonType\":2}");
             //把课时对象转换为JSONObject对象
             if (i==0){
                 lesson.setName("测试9");

@@ -32,6 +32,10 @@
     <select id="setLessonName"  parameterType="int" resultType="String">
         select name from crm_lesson where id =#{id}
     </select>
+    <!--查询接口返回值-->
+    <select id="testDataId"  parameterType="String" resultType="com.api.model.TestDate">
+        select * from test_data where id =#{id}
+    </select>
 
 
 
