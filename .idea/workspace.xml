@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="15a408e5-a230-4697-8081-6529270578ed" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface14/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/interface14/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/interface5/target/" />
     <ignored path="$PROJECT_DIR$/Chapter6/target/" />
@@ -93,16 +92,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/interface14/src/main/resources/mapper/SQLMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="67">
+            <state relative-caret-position="396">
               <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/interface14/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
+            <state relative-caret-position="165">
               <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
             </state>
           </provider>
@@ -113,7 +112,7 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/interface13/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-396" />
@@ -251,8 +250,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -283,10 +280,18 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="AotuTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AotuTest" type="462c0819:PsiDirectoryNode" />
+              <item name="interface14" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -531,6 +536,7 @@
       <workItem from="1609152567611" duration="5610000" />
       <workItem from="1609399712984" duration="9842000" />
       <workItem from="1609679270141" duration="1630000" />
+      <workItem from="1609681651244" duration="811000" />
     </task>
     <task id="LOCAL-00001" summary="第二次提交">
       <created>1599032044249</created>
@@ -560,7 +566,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609420079798</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="更改字符编码">
+      <created>1609681810922</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1609681810922</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -596,12 +609,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="371864000" />
+    <option name="totallyTimeSpent" value="372675000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20375335" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20375335" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -619,8 +633,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49865952" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49731904" visible="true" weight="0.49433428" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50268096" side_tool="true" weight="0.30878186" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4966488" visible="true" weight="0.04390935" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5033512" side_tool="true" visible="true" weight="0.04390935" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49731904" weight="0.30736545" />
       <window_info anchor="bottom" id="Spring" order="13" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" />
@@ -630,7 +644,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Maven" order="6" visible="true" weight="0.24128686" />
+      <window_info anchor="right" id="Maven" order="6" weight="0.24128686" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" />
@@ -643,7 +657,8 @@
     <MESSAGE value="第二次提交" />
     <MESSAGE value="第三次提交" />
     <MESSAGE value="第五次提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="第五次提交" />
+    <MESSAGE value="更改字符编码" />
+    <option name="LAST_COMMIT_MESSAGE" value="更改字符编码" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -1040,7 +1055,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/interface14/src/main/resources/mapper/SQLMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
+        <state relative-caret-position="396">
           <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
         </state>
       </provider>
@@ -1048,16 +1063,16 @@
     <entry file="file://$PROJECT_DIR$/interface12/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/interface14/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/interface13/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-396" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface14/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
       </provider>
     </entry>
   </component>
