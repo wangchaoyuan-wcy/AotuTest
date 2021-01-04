@@ -29,10 +29,10 @@ public class TestCase {
 
 
 
-    @BeforeTest
+    /*@BeforeTest
     public void getToken() {
 
-    }
+    }*/
 
     @Test
     public void test() throws IOException{
@@ -49,7 +49,5 @@ public class TestCase {
         assertThat("校验返回值code错误，验证code",code,is(expectedCode));
         assertThat("校验返回值msg错误，验证msg",msg,is(expectedMsg));
     }
-    @Test
-    public void test1() throws IOException {
-    }
+
 }
