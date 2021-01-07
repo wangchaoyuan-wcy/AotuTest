@@ -9,6 +9,7 @@
     </parent>-->
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <aspectj.version>1.9.4</aspectj.version>
     </properties>
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.bling</groupId>
@@ -29,6 +30,19 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.1</version>
                 <configuration>
+                    <!--设置参数命令行-->
+                    <argLine>
+                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+                    </argLine>
+                    <systemPropertyVariables>
+                        <!--是否忽略html，解释见下图。与之后在reportNg报告上显示截图相关。当前已经使用allure了，这里可以直接去掉啦-->
+                        <org.uncommons.reportng.escape-output>false</org.uncommons.reportng.escape-output>
+                    </systemPropertyVariables>
+                    <!--测试失败后，是否忽略并继续测试-->
+                    <testFailureIgnore>true</testFailureIgnore>
+                    <argLine>
+                        -Dfile.encoding=UTF-8
+                    </argLine>
                     <suiteXmlFiles>
                         <suiteXmlFile>./src/main/resources/testng.xml</suiteXmlFile><!--指向根目录下的testng.xml文件-->
                     </suiteXmlFiles>
@@ -38,6 +52,17 @@
     </build>
 
     <dependencies>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>${aspectj.version}</version>
+        </dependency>
+        <!--allure依赖-->
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId> allure-testng</artifactId>
+            <version>2.13.0</version>
+        </dependency>
         <!--调用接口-->
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
