@@ -31,10 +31,10 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Maven: org.aspectj:aspectjweaver:1.9.4" level="project" />
-    <orderEntry type="library" name="Maven: io.qameta.allure:allure-testng:2.13.0" level="project" />
-    <orderEntry type="library" name="Maven: io.qameta.allure:allure-java-commons:2.13.0" level="project" />
-    <orderEntry type="library" name="Maven: io.qameta.allure:allure-model:2.13.0" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.25" level="project" />
+    <orderEntry type="library" name="Maven: io.qameta.allure:allure-testng:2.13.2" level="project" />
+    <orderEntry type="library" name="Maven: io.qameta.allure:allure-java-commons:2.13.2" level="project" />
+    <orderEntry type="library" name="Maven: io.qameta.allure:allure-model:2.13.2" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.30" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.8" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.8" level="project" />
